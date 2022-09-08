@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>live chat</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylSheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="message right">gagan :hlo sir</div>
+        <div class="message left">sir : hi gagan</div>
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-continer">
+            <input type="text" id="msgInp" name="msgInp">
+            <button class="btn" type="submit">send</button>
+
+        </form>
+
+    </div>
+
+    <style>
+        .container {
+            background-color: aqua;
+            margin: auto;
+            border: 2px solid black;
+            max-width: 955px;
+            height: 60vh;
+            overflow-y: auto;
+        }
+
+        .message {
+            background-color: gray;
+            padding: 10px;
+            margin: 14px;
+            border-radius: 10px;
+            border: black 20px;
+
+        }
+
+        .left {
+            float: left;
+            clear: both;
+        }
+
+        .right {
+            float: right;
+            clear: both;
+        }
+
+        #send-continer {
+            text-align: center;
+            max-width: 985px;
+            margin: auto;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</body>
+
+</html>
